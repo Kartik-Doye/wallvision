@@ -102,7 +102,7 @@ jobs:
       # ADR-117 §5.4: abi3-py310 — one binary per OS/arch covers all
       # Python minor versions ≥ 3.10. Build only cp310 wheels.
       - name: Build wheels (cibuildwheel)
-        uses: pypa/cibuildwheel@7940a4c0e76eb2030e473a5f864f291f63ee879b
+        uses: pypa/cibuildwheel@1828c10ab37f080699c7b81cea34097c684a7074
         env:
           CIBW_BUILD: "cp310-*"
           CIBW_ARCHS_LINUX: ${{ matrix.arch }}
