@@ -1,0 +1,18 @@
+﻿[package]
+name = "wallvision-groundtruth"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+thiserror.workspace = true
+serde = { workspace = true, features = ["derive"] }
+wallvision-ontology = { path = "../wallvision-ontology" }
+wallvision-evidence = { path = "../wallvision-evidence" }
+
+[dev-dependencies]
+serde_json.workspace = true
+
+

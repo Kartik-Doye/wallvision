@@ -1,0 +1,22 @@
+﻿[package]
+name = "wallvision-certify"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+thiserror.workspace = true
+serde = { workspace = true, features = ["derive"] }
+blake3 = { version = "1.5", default-features = false }
+wallvision-ontology = { path = "../wallvision-ontology" }
+wallvision-attest = { path = "../wallvision-attest" }
+wallvision-evidence = { path = "../wallvision-evidence" }
+wallvision-ood = { path = "../wallvision-ood" }
+wifi-densepose-calibration = { path = "../wifi-densepose-calibration", default-features = false }
+
+[dev-dependencies]
+serde_json.workspace = true
+
+

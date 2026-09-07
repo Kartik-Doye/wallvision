@@ -1,0 +1,58 @@
+# WallVision Python runtime dependencies
+#
+# This file is the requirements.txt installation path for the Python tooling and
+# reference pipeline. The canonical package metadata lives in pyproject.toml;
+# keep versions here at the same minimum supported level.
+#
+# Rust, ESP32 firmware, and the TypeScript dashboard have separate toolchains.
+# See README.md for their installation requirements.
+
+# API and configuration
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+python-multipart>=0.0.6
+python-jose[cryptography]>=3.3.0
+passlib[bcrypt]>=1.7.4
+
+# Storage and background work
+sqlalchemy>=2.0.0
+alembic>=1.13.0
+asyncpg>=0.29.0
+psycopg2-binary>=2.9.0
+redis>=5.0.0
+aioredis>=2.0.0
+celery>=5.3.0
+kombu>=5.3.0
+
+# Signal processing and machine learning
+numpy>=1.24.0
+scipy>=1.11.0
+pandas>=2.1.0
+scikit-learn>=1.3.0
+torch>=2.1.0
+torchvision>=0.16.0
+opencv-python>=4.8.0
+pillow>=10.0.0
+matplotlib>=3.7.0
+
+# Hardware, networking, and utilities
+scapy>=2.5.0
+pyserial>=3.5
+paramiko>=3.3.0
+click>=8.1.0
+rich>=13.6.0
+typer>=0.9.0
+python-dotenv>=1.0.0
+pyyaml>=6.0
+toml>=0.10.2
+httpx>=0.25.0
+aiofiles>=23.2.0
+
+# Validation, observability, and logging
+marshmallow>=3.20.0
+jsonschema>=4.19.0
+prometheus-client>=0.19.0
+structlog>=23.2.0
+psutil>=5.9.0

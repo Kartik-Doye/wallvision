@@ -1,0 +1,22 @@
+﻿[package]
+name = "wallvision-policy"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+thiserror.workspace = true
+serde = { workspace = true, features = ["derive"] }
+wallvision-evidence = { path = "../wallvision-evidence" }
+wallvision-ood = { path = "../wallvision-ood" }
+wallvision-certify = { path = "../wallvision-certify" }
+wallvision-attest = { path = "../wallvision-attest" }
+blake3 = { version = "1.5", default-features = false }
+
+[dev-dependencies]
+serde_json.workspace = true
+wallvision-ontology = { path = "../wallvision-ontology" }
+
+

@@ -1,0 +1,18 @@
+﻿[package]
+name = "wallvision-placement"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+thiserror.workspace = true
+serde = { workspace = true, features = ["derive"] }
+wallvision-ontology = { path = "../wallvision-ontology" }
+wallvision-twin = { path = "../wallvision-twin" }
+
+[dev-dependencies]
+serde_json.workspace = true
+
+
